@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JavaScript</title>
+</head>
+
+<body>
+  <script>
+    //завдання 1
+    let user = {}
+    user.name = "John";
+    user.surname = "Smith";
+    user.name = "Pete";
+    delete user.name;
+
+    //завдання 2
+    const user1 = { name: "John" }
+
+    // Копіюємо всі властивості з об'єкта user
+    const admin = user1
+    admin.name = "Pete"
+
+    //Отримуємо властивість об'єкта:
+    console.log(user1.name)
+
+    //завдання 3
+    const user2 = {
+      name: "John",
+      age: 30
+    }
+    //Копіюємо всі властивості з об'єкта user2
+    const userCopy = Object.assign({}, user2)
+
+    userCopy.name = "Ann"
+    console.log(user2.name)
+
+    //завдання 4
+    let salaries = {
+      John: 100,
+      Ann: 160,
+      Pete: 130
+    }
+  </script>
+</body>
+
+</html>
